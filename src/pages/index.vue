@@ -1,13 +1,3 @@
-<script setup lang="ts">
-const name = $ref('')
-
-const router = useRouter()
-const go = () => {
-  if (name)
-    router.push(`/hi/${encodeURIComponent(name)}`)
-}
-</script>
-
 <template>
   <div>
     <div i-carbon-campsite text-4xl inline-block />
@@ -40,6 +30,7 @@ const go = () => {
     <div>
       <button
         class="m-3 text-sm btn"
+        rounded="1/2"
         :disabled="!name"
         @click="go"
       >
@@ -48,3 +39,12 @@ const go = () => {
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+  const name = $ref('')
+
+  const router = useRouter()
+  const go = () => {
+    if (name) { router.push(`/hi/${encodeURIComponent(name)}`) }
+  }
+</script>
