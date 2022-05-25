@@ -13,8 +13,8 @@ export default defineConfig({
   rules: [
     ['bg-box', { background: '#ff6700' }],
     // 此处报错 d / 4 不用理会
-    [/^s-(\d+)$/, ([, d]) => ({ margin: `${d / 4}rem` })],
-    [/^p-(\d+)$/, match => ({ padding: `${match[1] / 4}rem` })]
+    [/^s-(\d+)$/, ([, d]) => ({ margin: `${d as any / 4}rem` })],
+    [/^p-(\d+)$/, match => ({ padding: `${match[1] as any / 4}rem` })]
   ],
   shortcuts: [
     ['btn', 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
