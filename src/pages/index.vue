@@ -36,6 +36,13 @@
       >
         Go
       </button>
+      <button
+        class="m-3 text-sm btn"
+        rounded="1/2"
+        @click="testFn"
+      >
+        testFn
+      </button>
     </div>
   </div>
 </template>
@@ -46,5 +53,13 @@
   const router = useRouter()
   const go = () => {
     if (name) { router.push(`/hi/${encodeURIComponent(name)}`) }
+  }
+  const testFn = () => {
+    axios({
+      url: 'getLyric',
+      method: 'GET'
+    }).then(res => {
+      console.log(res.klyric.lyric)
+    })
   }
 </script>
