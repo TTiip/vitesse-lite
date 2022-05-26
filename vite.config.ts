@@ -103,7 +103,14 @@ export default defineConfig({
         'vue',
         'vue/macros',
         'vue-router',
-        '@vueuse/core'
+        '@vueuse/core',
+        // 自定义使用带结果提示的 axios
+        {
+          '~/axios': [
+            // default imports
+            ['default', 'axios'] // import { default as axios } from '~/axios',
+          ]
+        }
       ],
       dts: true,
       dirs: [
