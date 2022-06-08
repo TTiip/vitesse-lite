@@ -47,16 +47,10 @@
 
 ## 现在可以试试!
 
-### GitHub 模板
-
-[使用这个模板创建仓库](https://github.com/TTiip/vitesse-lite/generate).
-
 ### 克隆到本地
 
-如果您更喜欢使用更干净的 git 历史记录手动执行此操作
+如果您更喜欢使用更干净的 git 历史记录手动执行此操作（clone mergebranch 分支的代码）
 
 ```bash
-npx degit TTiip/vitesse-lite my-vitesse-app
-cd my-vitesse-app
-pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
+git clone https://github.com/TTiip/vitesse-lite -b mergebranch
 ```
