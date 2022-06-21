@@ -7,6 +7,7 @@ import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
   resolve: {
@@ -15,6 +16,7 @@ export default defineConfig({
     }
   },
   plugins: [
+    vueJsx(),
     Vue({
       reactivityTransform: true
     }),
@@ -22,7 +24,7 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       // 识别文件后缀
-      extensions: ['vue'],
+      extensions: ['vue', 'js', 'jsx', 'ts', 'tsx'],
       pagesDir: [
         {
           dir: 'src/pages',

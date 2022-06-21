@@ -1,6 +1,8 @@
 module.exports = {
   extends: ['@antfu'],
   rules: {
+    // JSX、TSX 函数组件必须需要函数名 (可以在JSX、TSX中使用 'name' 属性定义组件名)
+    'react/display-name': 'off',
     // 参数尽在 需要 () 包裹 时才包裹
     'arrow-parens': ['error', 'as-needed'],
     // 关闭 let 转换成 const
