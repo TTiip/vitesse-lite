@@ -49,8 +49,8 @@
 
 ### 克隆到本地
 
-如果您更喜欢使用更干净的 git 历史记录手动执行此操作（clone mergebranch 分支的代码）
+如果您更喜欢使用更干净的 git 历史记录手动执行此操作（clone TTiip 分支的代码）
 
 ```bash
-git clone https://github.com/TTiip/vitesse-lite -b mergebranch
+git clone https://github.com/TTiip/vitesse-lite -b TTiip
 ```
