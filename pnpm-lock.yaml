@@ -12,6 +12,7 @@ specifiers:
   axios: ^0.27.2
   eslint: ^8.20.0
   jsdom: ^20.0.0
+  pinia: ^2.0.21
   pnpm: ^7.6.0
   taze: ^0.7.6
   typescript: ^4.7.4
@@ -41,6 +42,7 @@ devDependencies:
   '@vue/test-utils': 2.0.2_vue@3.2.37
   eslint: 8.22.0
   jsdom: 20.0.0
+  pinia: 2.0.21_j6bzmzd4ujpabbp5objtwxyjp4
   pnpm: 7.9.0
   taze: 0.7.6
   typescript: 4.7.4
@@ -1147,7 +1149,6 @@ packages:
 
   /@vue/devtools-api/6.2.1:
     resolution: {integrity: sha512-OEgAMeQXvCoJ+1x8WyQuVZzFo0wcyCmUR3baRVLmKBo1LmYZWMlRiXlux5jd0fqVJu6PfDbOrZItVqUEzLobeQ==}
-    dev: false
 
   /@vue/reactivity-transform/3.2.37:
     resolution: {integrity: sha512-IWopkKEb+8qpu/1eMKVeXrK0NLw9HicGviJzhJDEyfxTR9e1WtpnnbYkJWurX6WwoFP0sz10xQg8yL8lgskAZg==}
@@ -4210,6 +4211,24 @@ packages:
   /picomatch/2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
     engines: {node: '>=8.6'}
+    dev: true
+
+  /pinia/2.0.21_j6bzmzd4ujpabbp5objtwxyjp4:
+    resolution: {integrity: sha512-6ol04PtL29O0Z6JHI47O3JUSoyOJ7Og0rstXrHVMZSP4zAldsQBXJCNF0i/H7m8vp/Hjd/CSmuPl7C5QAwpeWQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.2.1
+      typescript: 4.7.4
+      vue: 3.2.37
+      vue-demi: 0.12.1_vue@3.2.37
     dev: true
 
   /pkg-types/0.3.3:
