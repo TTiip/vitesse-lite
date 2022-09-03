@@ -123,6 +123,11 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-components
     Components({
+      // 这里不建议加上 ts 和 tsx 自动引入的ts和tsx文件，类型是any，组件上没有类型报错
+      // 具体的原因不知道，不知道是不是设计就是如此
+      // 所以 建议手动引入ts、tsx后缀结尾的文件。
+      extensions: ['vue', 'js', 'jsx'],
+      directoryAsNamespace: true,
       dts: true
     }),
 
